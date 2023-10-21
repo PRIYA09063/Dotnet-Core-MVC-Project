@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <!--
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>User Id : @ViewData["UserID"]</p>
+   
+
+   <div class="card-body">
+        <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+            <p><a href="http://localhost:5110/">Track Your Expense Here !! </a></p>
+           
+        </form>
+    </div>
+      -->
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <section>
+                <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                   
+                   
+                    <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                    <div class="form-floating mb-3">
+                        <a href="http://localhost:5110/">Track Your Expense Here !! </a>
+                    </div>
+                   
+                    <div>
+                        <button id="logout" type="submit" class="w-100 btn btn-lg btn-primary" style="background-color:forestgreen ; color:black">Are you Sure You want to logout !!</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+   
+</div>
